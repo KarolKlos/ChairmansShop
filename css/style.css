@@ -1,0 +1,156 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  width: 1000px;
+  margin: 0 auto;
+}
+.container::after
+{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+span
+{
+  color: blue;
+}
+
+header
+{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.headerParagraph
+{
+  float: left;
+  padding: 10px;
+}
+
+.headerMenu
+{
+  float: right;
+}
+
+.headerMenuItem
+{
+  text-align: right;
+  display: inline-block;
+  padding: 10px;
+}
+
+.headerLink
+{
+  text-decoration: none;
+}
+
+ul li ul
+{
+  display: none;
+}
+
+ul li:hover ul
+{
+  display: block;
+  position: absolute;
+}
+
+section
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider
+{
+  background-image: linear-gradient(white, lightgrey);
+  text-align: center;
+}
+
+.slider img
+{
+  float: left;
+  width: 400px;
+}
+
+.inputs
+{
+  height: 300px;
+}
+
+.inputs .container div
+{
+  width: 280px;
+  height: 250px;
+  margin: 20px;
+}
+
+.inputs .container :nth-child(1)
+{
+  background-image: url('../images/box1_img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  padding-top: 150px;
+  color: white;
+}
+.inputs .container :nth-child(2)
+{
+  background-image: url('../images/box2_img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  padding-top: 150px;
+  color: white;
+}
+.inputs .container :nth-child(3)
+{
+  border: 1px solid black;
+  padding-top: 50px;
+  float: left;
+}
+
+.price
+{
+background: lightgrey;
+}
+.price .container div
+{
+  width: 280px;
+  height: 500px;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid grey;
+}
+.price .container :nth-child(1)
+{
+  float: left;
+  position: relative;
+}
+.price .container :nth-child(2)
+{
+  float: left;
+  position: relative;
+}
+.price .container :nth-child(3)
+{
+  float: left;
+  position: relative;
+}
+.price .container :nth-child(1+1)::after
+{
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+}
